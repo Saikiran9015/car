@@ -118,7 +118,7 @@ export default function ProductsSection() {
                 </span>
 
                 <a
-                  href={`https://wa.me/919515040101?text=Hi, I'm interested in buying: ${product.name}`}
+                  href={`https://api.whatsapp.com/send?phone=919515040101&text=Hi, I'm interested in buying: ${product.name}`}
                   target="_blank"
                   className="bg-green-600 hover:bg-green-700 text-white p-3 rounded-full transition"
                 >

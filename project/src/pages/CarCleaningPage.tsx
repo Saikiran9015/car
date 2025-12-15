@@ -103,7 +103,7 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
 
                 {/* ORDER NOW BUTTON */}
                 <a
-                  href={`https://wa.me/919515040101?text=I want to order: ${product.name}`}
+                  href={`https://api.whatsapp.com/send?phone=919515040101&text=I want to order: ${product.name}`}
                   target="_blank"
                   className="w-full mt-4 bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition block text-center"
                 >
@@ -137,7 +137,7 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
             </a>
 
             <a
-              href="https://wa.me/919515040101"
+              href="https://api.whatsapp.com/send?phone=919515040101"
               target="_blank"
               className="flex flex-col items-center text-green-600 hover:scale-110 transition"
             >
@@ -154,7 +154,7 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
 
       {/* ⭐ STICKY WHATSAPP BUTTON */}
       <a
-        href="https://wa.me/919515040101"
+        href="https://api.whatsapp.com/send?phone=919515040101"
         target="_blank"
         className="fixed bottom-6 right-6 bg-green-600 p-4 rounded-full shadow-xl hover:bg-green-700 transition z-50"
       >
