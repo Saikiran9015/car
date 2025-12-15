@@ -127,15 +127,7 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
 
           <div className="flex justify-center gap-10 mt-6">
 
-            <a
-              href="tel:+919515040101"
-              className="flex flex-col items-center text-green-600 hover:scale-110 transition"
-            >
-              <div className="bg-green-100 p-5 rounded-full shadow-md">
-                <Phone className="w-10 h-10 text-green-600" />
-              </div>
-              <span className="mt-2 font-semibold">Call Us</span>
-            </a>
+           
 
             <a
               href={getWhatsAppLink()}
