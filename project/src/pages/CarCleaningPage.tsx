@@ -15,14 +15,13 @@ const products = [
   { name: "Microfiber Cleaning Duster", price: "₹70", imageUrl: "/Products/Microfiber cleaning duster.jpg" },
   { name: "Tyre Polish", price: "₹150", imageUrl: "/Products/Tyre polish.jpg" },
   { name: "Odonil AER Pocket Fragrance", price: "₹65", imageUrl: "/Products/Odonil aer pocket.jpg" },
-  { name : "Mobile Holder", Price:"₹65", imageUrl:"/Products/Phone Holder.jpg" }
+  { name: "Mobile Holder", price: "₹65", imageUrl: "/Products/Phone Holder.jpg" },
 ];
 
 export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-6 relative">
       <div className="max-w-6xl mx-auto">
-        
         {/* BACK BUTTON */}
         <button
           onClick={onBack}
@@ -41,14 +40,11 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
             backgroundPosition: "center",
             height: "420px",
           }}
-
         >
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-black/50" />
 
           <div className="relative z-10 text-center text-white pt-16 px-6">
-            <h1 className="text-5xl font-extrabold drop-shadow-lg">
-              Car Cleaning Products
-            </h1>
+            <h1 className="text-5xl font-extrabold drop-shadow-lg">Car Cleaning Products</h1>
             <p className="text-xl opacity-90 mt-3 drop-shadow">
               Trusted & high-quality car care essentials
             </p>
@@ -56,7 +52,6 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
 
           {/* FEATURE CARDS */}
           <div className="relative z-20 grid grid-cols-1 md:grid-cols-3 gap-6 px-10 -bottom-24 absolute w-full">
-
             <div className="bg-white p-6 rounded-2xl shadow-xl text-center">
               <h3 className="text-xl font-bold mb-2">Gentle & Effective</h3>
               <p className="text-gray-600">Perfect for all car surfaces</p>
@@ -71,12 +66,11 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
               <h3 className="text-xl font-bold mb-2">Top Quality</h3>
               <p className="text-gray-600">Premium-grade materials</p>
             </div>
-
           </div>
         </div>
 
         {/* SPACING */}
-        <div className="mt-28"></div>
+        <div className="mt-28" />
 
         {/* ================= PRODUCT GRID ================= */}
         <div className="bg-white rounded-2xl shadow-lg p-8">
@@ -148,7 +142,6 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
             </a>
           </div>
         </div>
-
       </div>
 
       {/* ⭐ STICKY WHATSAPP BUTTON */}
