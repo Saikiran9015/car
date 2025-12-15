@@ -1,4 +1,5 @@
 import { ArrowLeft, Phone, MessageCircle } from "lucide-react";
+import { getWhatsAppLink } from "../config";
 
 interface CarCleaningPageProps {
   onBack: () => void;
@@ -103,7 +104,9 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
 
                 {/* ORDER NOW BUTTON */}
                 <a
-                  href={`https://api.whatsapp.com/send?phone=919515040101&text=I want to order: ${product.name}`}
+                  href={getWhatsAppLink(
+                    `I want to order: ${product.name}`
+                  )}
                   target="_blank"
                   className="w-full mt-4 bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition block text-center"
                 >
@@ -137,7 +140,7 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
             </a>
 
             <a
-              href="https://api.whatsapp.com/send?phone=919515040101"
+              href={getWhatsAppLink()}
               target="_blank"
               className="flex flex-col items-center text-green-600 hover:scale-110 transition"
             >
@@ -154,7 +157,7 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
 
       {/* ⭐ STICKY WHATSAPP BUTTON */}
       <a
-        href="https://api.whatsapp.com/send?phone=919515040101"
+        href={getWhatsAppLink()}
         target="_blank"
         className="fixed bottom-6 right-6 bg-green-600 p-4 rounded-full shadow-xl hover:bg-green-700 transition z-50"
       >

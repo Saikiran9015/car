@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
+import { getWhatsAppLink } from '../config';
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
 
       {/* Sticky WhatsApp Button */}
       <a
-        href="https://api.whatsapp.com/send?phone=919515040101&text=Hi, I need more details about your service."
+        href={getWhatsAppLink('Hi, I need more details about your service.')}
         target="_blank"
         className="fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 p-4 rounded-full shadow-xl transition z-50"
       >
@@ -42,7 +43,7 @@ export default function Footer() {
 
               {/* WhatsApp - Click to Chat */}
               <a
-                href="https://api.whatsapp.com/send?phone=919515040101&text=Hi, I want to know more about your services."
+                href={getWhatsAppLink('Hi, I want to know more about your services.')}
                 target="_blank"
                 className="flex items-center gap-3 text-gray-400 hover:text-white transition"
               >

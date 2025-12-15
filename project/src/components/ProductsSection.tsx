@@ -1,4 +1,5 @@
 import { Star, MessageCircle } from "lucide-react";
+import { getWhatsAppLink } from "../config";
 
 interface Product {
   id: number;
@@ -118,7 +119,9 @@ export default function ProductsSection() {
                 </span>
 
                 <a
-                  href={`https://api.whatsapp.com/send?phone=919515040101&text=Hi, I'm interested in buying: ${product.name}`}
+                  href={getWhatsAppLink(
+                    `Hi, I'm interested in buying: ${product.name}`
+                  )}
                   target="_blank"
                   className="bg-green-600 hover:bg-green-700 text-white p-3 rounded-full transition"
                 >

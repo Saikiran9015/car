@@ -15,6 +15,7 @@ import {
   Settings,
   Disc,
 } from "lucide-react";
+import { getWhatsAppLink } from "../config";
 
 interface CarServicePageProps {
   onBack: () => void;
@@ -158,7 +159,7 @@ export default function CarServicePage({ onBack }: CarServicePageProps) {
 
           {/* Book Button → WhatsApp */}
           <a
-            href="https://api.whatsapp.com/send?phone=919515040101&text=I want to book a car service"
+            href={getWhatsAppLink("I want to book a car service")}
             target="_blank"
             className="inline-block bg-blue-600 text-white py-3 px-8 rounded-xl hover:bg-blue-700 transition text-lg"
           >
@@ -181,7 +182,7 @@ export default function CarServicePage({ onBack }: CarServicePageProps) {
             </a>
 
             <a
-              href="https://api.whatsapp.com/send?phone=919515040101"
+              href={getWhatsAppLink()}
               target="_blank"
               className="text-green-600 flex flex-col items-center hover:scale-110 transition"
             >
@@ -199,7 +200,7 @@ export default function CarServicePage({ onBack }: CarServicePageProps) {
 
       {/* Floating WhatsApp Button */}
       <a
-        href="https://api.whatsapp.com/send?phone=919515040101"
+        href={getWhatsAppLink()}
         target="_blank"
         className="fixed bottom-6 right-6 bg-green-600 p-4 rounded-full shadow-xl hover:scale-110 transition z-50"
       >
