@@ -60,7 +60,6 @@ const products: Product[] = [
     imageUrl: "https://shinexpro.in/cdn/shop/files/3_79e90bd7-3e7a-438f-8acb-f07a38b3f41c_2048x.jpg?v=1717768266",
   },
 ];
-
 export default function ProductsSection() {
   return (
     <div className="my-16">

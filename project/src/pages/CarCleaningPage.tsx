@@ -104,12 +104,10 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
 
                 {/* ORDER NOW BUTTON */}
                 <a
-                  href={getWhatsAppLink(
-                    `I want to order: ${product.name}`
-                  )}
-                  target="_blank"
-                  className="w-full mt-4 bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition block text-center"
-                >
+  href={getWhatsAppLink(`I want to order: ${product.name}`)}
+  target="_blank"
+  className="w-full mt-4 bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg transition block text-center"
+>
                   Order Now
                 </a>
               </div>
