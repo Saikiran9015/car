@@ -71,11 +71,14 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
           </div>
         </div>
 
+        {/* SPACING */}
         <div className="mt-28" />
 
         {/* PRODUCT GRID */}
         <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold mb-6 text-gray-800">All Products</h2>
+          <h2 className="text-3xl font-bold mb-6 text-gray-800">
+            All Products
+          </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             {products.map((product, index) => (
@@ -91,7 +94,10 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
                   />
                 </div>
 
-                <h3 className="text-xl font-bold mb-2">{product.name}</h3>
+                <h3 className="text-xl font-bold mb-2">
+                  {product.name}
+                </h3>
+
                 <p className="text-2xl font-bold text-green-600">
                   {product.price}
                 </p>
@@ -108,7 +114,7 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
           </div>
         </div>
 
-        {/* CONTACT */}
+        {/* CONTACT SECTION */}
         <div className="mt-16 text-center bg-white p-10 rounded-2xl shadow-lg">
           <h2 className="text-3xl font-bold mb-4">
             Need Car Cleaning Products?
@@ -128,7 +134,7 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
         </div>
       </div>
 
-      {/* STICKY WHATSAPP */}
+      {/* STICKY WHATSAPP BUTTON */}
       <a
         href={getWhatsAppLink()}
         target="_blank"
