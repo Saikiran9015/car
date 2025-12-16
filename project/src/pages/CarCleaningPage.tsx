@@ -71,7 +71,6 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
           </div>
         </div>
 
-        {/* SPACING */}
         <div className="mt-28" />
 
         {/* PRODUCT GRID */}
