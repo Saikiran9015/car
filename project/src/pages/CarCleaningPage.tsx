@@ -26,7 +26,7 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
         {/* BACK BUTTON */}
         <button
           onClick={onBack}
-          className="flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold mb-8 transition"
+          className="flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold mb-8"
         >
           <ArrowLeft className="w-5 h-5" />
           Back to Home
@@ -60,7 +60,10 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
               ["Fresh Fragrance", "Keeps your car smelling great"],
               ["Top Quality", "Premium-grade materials"],
             ].map(([title, desc]) => (
-              <div key={title} className="bg-white p-6 rounded-2xl shadow-xl text-center">
+              <div
+                key={title}
+                className="bg-white p-6 rounded-2xl shadow-xl text-center"
+              >
                 <h3 className="text-xl font-bold mb-2">{title}</h3>
                 <p className="text-gray-600">{desc}</p>
               </div>
@@ -89,7 +92,9 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
                 </div>
 
                 <h3 className="text-xl font-bold mb-2">{product.name}</h3>
-                <p className="text-2xl font-bold text-green-600">{product.price}</p>
+                <p className="text-2xl font-bold text-green-600">
+                  {product.price}
+                </p>
 
                 <a
                   href={getWhatsAppLink(`I want to order: ${product.name}`)}
@@ -105,8 +110,12 @@ export default function CarCleaningPage({ onBack }: CarCleaningPageProps) {
 
         {/* CONTACT */}
         <div className="mt-16 text-center bg-white p-10 rounded-2xl shadow-lg">
-          <h2 className="text-3xl font-bold mb-4">Need Car Cleaning Products?</h2>
-          <p className="text-gray-600 mb-6">Contact us anytime for orders.</p>
+          <h2 className="text-3xl font-bold mb-4">
+            Need Car Cleaning Products?
+          </h2>
+          <p className="text-gray-600 mb-6">
+            Contact us anytime for orders or delivery details.
+          </p>
 
           <div className="flex justify-center gap-10">
             <a href="tel:+919515040101">
